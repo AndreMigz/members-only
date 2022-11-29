@@ -1,0 +1,11 @@
+<div class="post-container">
+    <% @posts.reverse_each do |post| %>
+        <div class="card">
+            <h5 class="card-header">Post by: <%= post.user.email %></h5>
+            <div class="card-body">
+                <h5 class="card-title"><%=post.title%></h5>
+                <p class="card-text"><%= post.content%></p>
+            </div>
+        </div>
+    <% end %>
+</div>
