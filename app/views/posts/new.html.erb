@@ -2,17 +2,13 @@
     <div class="container form">
         <h3>Create Post</h3>
         <div>
-            <%= form.label :title %>
-            <br>
-            <%= form.text_field :title %>
+            <%= form.text_field :title, placeholder: "Post title" %>
         </div>
         <div>
-            <%= form.label :content%>
-            <br>
-            <%= form.text_area :content%><br>
+            <%= form.text_area :content, placeholder: "What are your thoughts?" %><br>
         </div>
         <div>
-        <%= form.submit %>
+        <%= form.submit "Submit", class: "btn btn-primary btn-lg" %>
         </div>
     </div>
 <% end %>
